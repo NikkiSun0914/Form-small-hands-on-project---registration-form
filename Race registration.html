@@ -1,0 +1,61 @@
+<!--Create basic skeleton骨架-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Race Registration</title>
+  </head>
+  <body>
+    <!--create h1-->
+    <h1>Race Registration!</h1>
+    <!--Create form-->
+    <div>
+      <form action="">
+        <p>
+          <!-- First area---label+input-->
+          <label for="first">First Name</label>
+          <input type="text" name="first" id="first" />
+          <label for="last">Last Name</label>
+          <input type="text" name="last" id="last" />
+        </p>
+
+        <p>
+          <!--Radio selection-->
+          Select a Race:<br />
+
+          <input type="radio" id="5k" name="option" />
+          <label for="5k">Fun Run 5k</label><br />
+
+          <input type="radio" id="half" name="option" />
+          <label for="half">Half Marathon</label><br />
+
+          <input type="radio" id="full" name="option" />
+          <label for="full">Full Marathon</label>
+        </p>
+
+        <p>
+          <!--email+password, don't forget required attributes-->
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" required />
+        </p>
+
+        <p>
+          <!--select + option, attribute value-->
+          <label for="age">Select Age Group</label>
+          <select name="age" id="age">
+            <option value="<18">Under 18</option>
+            <option value="18-35">18-35</option>
+            <option value="36-55">36-55</option>
+            <option value=">55">Above 55</option>
+          </select>
+        </p>
+        <!--bottom button-->
+        <button>Register!</button>
+      </form>
+    </div>
+  </body>
+</html>
